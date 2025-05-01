@@ -36,12 +36,12 @@ public class ContactsController {
         return contactsService.updateContact(contact);
     }
 
-    @GetMapping("contacts/{gender}")
+    @GetMapping("contacts/gender/{gender}")
     public ResponseEntity<List<Contact>> searchContactsByGender(@PathVariable("gender") String gender) {
         return contactsService.searchContactsByGender(gender);
     }
 
-    @GetMapping("contacts/{county}")
+    @GetMapping("contacts/county/{county}")
     public ResponseEntity<List<Contact>> searchContactsByCounty(@PathVariable("county") String county) {
         return contactsService.searchContactsByCounty(county);
     }
