@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("contacts")
-//@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*")
 public class ContactsController {
     @Autowired
     private ContactsService contactsService;
